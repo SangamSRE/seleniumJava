@@ -7,9 +7,10 @@ import com.sdet.auto.TestHelper.TestAssert;
 public class EmailSentPage extends WebDriverExtensions {
 
     private final static String txtMessage = "#content";
-
+    
+    //sangam_singhfgfg
     public static void VerifyEmailSent(TestAssert testAssert, String expectedMsg){
-
+        
         testAssert.setPass(LoggingLibrary.CompareResult(getElementBySelector(txtMessage).getText(), expectedMsg));
     }
 }
