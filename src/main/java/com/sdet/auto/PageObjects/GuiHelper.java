@@ -15,7 +15,8 @@ public class GuiHelper {
     public static void openWebBrowser(WebDriver chrome){
         getWebDriver(chrome);
     }
-
+    
+    //making it more robust
     public static void closeWebBrowser(){
         WebDriverBase.driver.close();
         WebDriverBase.driver.quit();
